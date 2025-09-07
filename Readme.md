@@ -154,10 +154,6 @@ The system implements proper rate limiting for SEC API requests to comply with t
 
 This project is developed for CrowdWisdomTrading internship assessment.
 
-## Support
-
-For issues and questions, please contact: gilad@crowdwisdomtrading.com
-
 ---
 
 **Note**: This system is designed for educational and analysis purposes. Always consult with financial professionals before making investment decisions based on insider trading data.
