@@ -6,7 +6,7 @@ This project implements a comprehensive insider trading analysis system using Cr
 
 ## Features
 
-- **SEC Data Retrieval**: Automated fetching of SEC filings from the last 24 hours
+- **SEC Data Retrieval**: Automated fetching of SEC filings from the last 24 hours or around 
 - **Insider Trading Analysis**: Analysis of Form 4 filings and insider transactions
 - **Data Visualization**: Interactive charts comparing current and historical data
 - **Comprehensive Reports**: HTML reports with insights and actionable intelligence
@@ -106,12 +106,27 @@ The system automatically retrieves data from SEC sources - no manual input requi
 ### Output Example
 ```json
 {
-  "status": "completed",
-  "report_path": "output/reports/insider_trading_report_20241203_143022.html",
-  "chart_paths": "output/charts/trading_volume_20241203_143022.html, output/charts/value_distribution_20241203_143022.html",
-  "sec_data": "[{\"company\": \"Apple Inc.\", \"form\": \"4\", \"filing_date\": \"2024-12-03\"}]",
-  "insider_data": "[{\"company\": \"Apple Inc.\", \"insider_name\": \"Tim Cook\", \"transaction_type\": \"Sale\", \"shares\": 50000, \"value\": 9275000}]"
-}
+        "rank": 1,
+        "date": "2025-09-06",
+        "company_ticker": "NVDA",
+        "company_name": "NVIDIA Corporation",
+        "insider_name": "Jensen Huang",
+        "insider_title": "Chief Executive Officer",
+        "transaction_type": "Sale",
+        "shares": 1200000,
+        "price_per_share": 1127.89,
+        "total_value": 1353468000,
+        "form_type": "4",
+        "filing_date": "2025-09-06",
+        "ownership_percentage_before": 3.2,
+        "ownership_percentage_after": 2.8,
+        "anomaly_score": 9.2,
+        "market_context": {
+          "stock_performance_30d": -8.3,
+          "sector_performance_30d": -12.1,
+          "earnings_announcement_days_away": 45,
+          "recent_news_sentiment": "neutral"
+        }
 ```
 
 ## Advanced Features
